@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+# ML Models & Artifacts (ЗАПРЕЩЕНО хранить в Git)
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.h5
+*.bin
+*.weights
+models/
+*.dvc
+
+# Environment & Secrets
+.env
+.env.local
+*.secret
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
