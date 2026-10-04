@@ -48,8 +48,8 @@
 ## 5. Контекстная диаграмма (C4 Model — Level 1)
 ```mermaid
 flowchart LR
-    Camera[Оптический пост / Камера] -->|RTSP / HTTP поток кадров| System[AI-Система дефектоскопии\n(Edge IPC)]
-    Operator[Оператор линии] -->|Просмотр алертов и статистики| System
-    System -->|JSON: Вердикт + координаты дефекта| MES[(MES / SCADA Система)]
-    System -->|Сохранение кадров с дефектами| MinIO[(Локальное S3 / MinIO)]
-    System -.->|Метрики latency и FPS| Prometheus[Prometheus / Grafana]
+    Camera["Оптический пост / Камера"] -->|"RTSP / HTTP поток кадров"| System["AI-Система дефектоскопии<br/>(Edge IPC)"]
+    Operator["Оператор линии"] -->|"Просмотр алертов и статистики"| System
+    System -->|"JSON: Вердикт + координаты дефекта"| MES[("MES / SCADA Система")]
+    System -->|"Сохранение кадров с дефектами"| MinIO[("Локальное S3 / MinIO")]
+    System -.->|"Метрики latency и FPS"| Prometheus["Prometheus / Grafana"]
