@@ -241,6 +241,3 @@ ai-system-visual-quality-inspection/
 │   └── adr/          # ADR-01, ADR-02, ADR-03
 └── tests/
 ```
-```
-
-**Всё.** Это полный файл от начала до конца. Скопируй его, вставь в `README.md`, сохрани, сделай `git add .`, `git commit -m "fix"`, `git push` — и работа готова.
