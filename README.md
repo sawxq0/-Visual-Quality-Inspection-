@@ -243,6 +243,9 @@ ai-system-visual-quality-inspection/
 ```
 ---
 
+```markdown
+---
+
 ## Лабораторная работа №4: Data Pipeline и DataOps
 
 В рамках данного этапа реализован воспроизводимый конвейер подготовки данных для задачи предиктивного обслуживания оборудования (телеметрия).
@@ -255,3 +258,24 @@ ai-system-visual-quality-inspection/
 5. **MLOps:** Параметры, метрики и артефакты (препроцессор, отчет) логируются в `MLflow Tracking`.
 
 ### Быстрый запуск:
+```bash
+# Активация окружения
+source venv/Scripts/activate  # или .\venv\Scripts\activate (Windows)
+
+# Воспроизведение пайплайна подготовки данных
+dvc repro
+
+# Просмотр экспериментов в MLflow (опционально)
+mlflow ui
+```
+```
+
+Сохраняем `README.md` и делаем последний штрих:
+
+```bash
+git add README.md
+git commit -m "docs: add lab4 data pipeline description to README"
+git push origin main
+```
+
+---
