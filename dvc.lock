@@ -1,0 +1,34 @@
+schema: '2.0'
+stages:
+  prepare_data:
+    cmd: python src/pipeline.py
+    deps:
+    - path: data/raw/telemetry.csv
+      hash: md5
+      md5: a95df93c72c56ffea5d03fa8e8fa9cd6
+      size: 61998
+    - path: src/contracts.py
+      hash: md5
+      md5: 584ceed5088078b4fc5fd6b19433c959
+      size: 671
+    - path: src/pipeline.py
+      hash: md5
+      md5: 5492a685d42f4271b8ee91eddf24e714
+      size: 3085
+    outs:
+    - path: artifacts/preprocessor.joblib
+      hash: md5
+      md5: a3cd56a4f7fdc0a5d70d683cc64cd506
+      size: 3149
+    - path: data/processed/test.parquet
+      hash: md5
+      md5: 39028fd4ce665cb5af8048da4ee76005
+      size: 10534
+    - path: data/processed/train.parquet
+      hash: md5
+      md5: f560ecdbb08b36e4602e6a5cfa98a438
+      size: 25553
+    - path: data/processed/validation_report.json
+      hash: md5
+      md5: 37dda397fcff74f35a4f6ad2c3e13d73
+      size: 112

@@ -1,0 +1,14 @@
+stages:
+  prepare_data:
+    cmd: python src/pipeline.py
+    deps:
+      - src/pipeline.py
+      - src/contracts.py
+      - data/raw/telemetry.csv
+    outs:
+      - data/processed/train.parquet
+      - data/processed/test.parquet
+      - artifacts/preprocessor.joblib
+    metrics:
+      - data/processed/validation_report.json:
+          cache: false
