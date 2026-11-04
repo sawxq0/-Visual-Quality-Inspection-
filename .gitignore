@@ -19,7 +19,6 @@ venv.bak/
 *.bin
 *.weights
 models/
-*.dvc
 
 # Environment & Secrets
 .env
@@ -35,3 +34,5 @@ models/
 # OS
 .DS_Store
 Thumbs.db
+\!.dvc/
+\!.dvcignore
