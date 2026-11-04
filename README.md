@@ -243,7 +243,7 @@ ai-system-visual-quality-inspection/
 ```
 ---
 
-```markdown
+
 ---
 
 ## Лабораторная работа №4: Data Pipeline и DataOps
@@ -277,5 +277,3 @@ git add README.md
 git commit -m "docs: add lab4 data pipeline description to README"
 git push origin main
 ```
-
----
