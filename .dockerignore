@@ -1,0 +1,10 @@
+# Исключения контекста Docker:
+venv/
+.venv/
+__pycache__/
+*.pyc
+.git/
+.dvc/cache/
+data/raw/
+*.csv
+.DS_Store
