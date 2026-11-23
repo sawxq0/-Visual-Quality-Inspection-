@@ -263,6 +263,25 @@ source venv/Scripts/activate  # или .\venv\Scripts\activate (Windows)
 # Воспроизведение пайплайна подготовки данных
 dvc repro
 
+
+## Лабораторная работа №5
+# Visual Quality Inspection (Контейнеризация)
+
+Сервис инференса для дефектоскопии на базе FastAPI и PyTorch (MobileNetV3).
+
+## Стек
+- Python 3.11
+- FastAPI, Uvicorn
+- PyTorch, Torchvision
+- Docker
+
+## Сборка Docker-образа
+Для сборки образа с семантическим тегом выполните:
+```bash
+docker build -t visual-inspector:v1.0.0 .
+
+
+
 # Просмотр экспериментов в MLflow (опционально)
 mlflow ui
 ```
