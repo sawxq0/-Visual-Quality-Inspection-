@@ -262,7 +262,7 @@ source venv/Scripts/activate  # или .\venv\Scripts\activate (Windows)
 
 # Воспроизведение пайплайна подготовки данных
 dvc repro
-
+bash```
 
 ## Лабораторная работа №5
 # Visual Quality Inspection (Контейнеризация)
